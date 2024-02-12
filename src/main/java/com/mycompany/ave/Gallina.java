@@ -8,7 +8,7 @@ package com.mycompany.ave;
  *
  * @author pipe2
  */
-public class Gallina extends Ave {
+public class Gallina extends Ave implements Volar {
     
     public void makeSound(){
     

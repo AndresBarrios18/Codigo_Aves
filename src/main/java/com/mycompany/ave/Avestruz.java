@@ -14,10 +14,5 @@ public class Avestruz extends Ave {
         System.out.println("<<Silencio>>");
     
     }
-    
-    public void vuela(){
-        System.out.println("No vuela");
-    
-    }
-    
+     
 }

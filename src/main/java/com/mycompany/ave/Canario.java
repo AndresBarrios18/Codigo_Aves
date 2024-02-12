@@ -8,7 +8,7 @@ package com.mycompany.ave;
  *
  * @author pipe2
  */
-public class Canario extends Ave {
+public class Canario extends Ave implements Volar {
     
     
     public void makeSound(){
@@ -20,5 +20,6 @@ public class Canario extends Ave {
         System.out.println("vuela con alas");
         
     }
+
     
 }
