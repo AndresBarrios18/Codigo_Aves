@@ -16,4 +16,9 @@ public class Gallina extends Ave {
     
     }
     
+    public void vuela(){
+        System.out.println("vuela con alas");
+    
+    }
+    
 }

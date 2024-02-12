@@ -15,4 +15,9 @@ public class Avestruz extends Ave {
     
     }
     
+    public void vuela(){
+        System.out.println("No vuela");
+    
+    }
+    
 }
