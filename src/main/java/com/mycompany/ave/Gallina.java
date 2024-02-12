@@ -17,7 +17,7 @@ public class Gallina extends Ave {
     
     public Gallina(){
         logger.debug("instanciando una gallina");
-        this.setTipoSonido(new Grasnido());
-        this.setTipoVuelo(new VueloConAlas());
+        tipoSonido = new Grasnido();
+        tipoVuelo = new VueloConAlas();
     }
 }
