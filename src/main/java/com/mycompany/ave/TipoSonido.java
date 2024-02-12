@@ -8,8 +8,7 @@ package com.mycompany.ave;
  *
  * @author pipe2
  */
-public interface Volar {
+public interface TipoSonido {
     
-    void vuela();
-    
+    void makeSound();
 }

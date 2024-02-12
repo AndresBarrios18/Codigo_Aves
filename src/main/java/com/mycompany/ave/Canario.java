@@ -4,22 +4,22 @@
  */
 package com.mycompany.ave;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 /**
  *
  * @author pipe2
  */
-public class Canario extends Ave implements Volar {
+public class Canario extends Ave {
     
     
-    public void makeSound(){
-        System.out.println("Canta");
-        
-    }
+    public static final Logger logger = LoggerFactory.getLogger(Canario.class);
     
-    public void vuela(){
-        System.out.println("vuela con alas");
-        
-    }
+    public Canario(){
+        logger.debug("instanciando canario");
+        tipoSonido = new Canto();
+        tipoVuelo = new VueloConAlas();     
+}
 
-    
+
 }

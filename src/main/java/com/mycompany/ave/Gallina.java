@@ -4,21 +4,20 @@
  */
 package com.mycompany.ave;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 /**
  *
  * @author pipe2
  */
-public class Gallina extends Ave implements Volar {
+public class Gallina extends Ave {
     
-    public void makeSound(){
     
-        System.out.println("Grasna");
+    public static final Logger logger = LoggerFactory.getLogger(Gallina.class);
     
+    public Gallina(){
+        logger.debug("instanciando una gallina");
+        tipoSonido = new Grasnido();
+        tipoVuelo = new VueloConAlas();
     }
-    
-    public void vuela(){
-        System.out.println("vuela con alas");
-    
-    }
-    
 }

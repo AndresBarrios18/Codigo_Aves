@@ -10,15 +10,14 @@ import org.slf4j.LoggerFactory;
  *
  * @author pipe2
  */
-public class Avestruz extends Ave {
+public class SinVuelo implements TipoVuelo {
     
-    public static final Logger logger = LoggerFactory.getLogger(Avestruz.class);
     
-    public Avestruz(){
-        logger.debug("instanciando aveztruz");
-        tipoSonido = new SinCanto();
-        tipoVuelo = new SinVuelo();
+    public static final Logger logger = LoggerFactory.getLogger(SinVuelo.class);
+    
+    public void vuelo(){
+        logger.debug("no puedo volar");
+        System.out.println("no puedo volar");
+    
     }
-
-    
 }
